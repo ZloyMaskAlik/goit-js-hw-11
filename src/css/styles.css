@@ -5,9 +5,6 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
-* {
-  box-sizing: border-box;
-}
 
 ul,
 ol {
@@ -37,7 +34,6 @@ p {
 img {
   display: block;
   width: 100%;
-  height: auto;
   object-fit: cover;
 }
 
@@ -109,10 +105,11 @@ img {
 
 .images-container {
   display: flex;
+  flex-direction: column;
   width: 1440px;
-  padding-left: 36px;
-  padding-right: 36px;
+  padding: 0 60px;
   margin: 36px auto;
+
 }
 
 .gallery-image {
@@ -123,14 +120,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  padding: 0 50px;
   gap: 24px;
 }
 
 .gallery-item {
-  display: block;
-  min-width: calc((100% - 80px) / 3);
+  width: calc((100% - 120px) / 3);
   border: 1px solid #2e2f42;
   box-shadow: 5px 10px 9px 8px #d8d7d7;
   transition: transform 250ms ease-in-out;
