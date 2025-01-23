@@ -7,7 +7,7 @@ export const fetchImages = searchedQuery => {
     q: searchedQuery,
     image_type: 'photo',
     orientation: 'horizontal',
-    safesearch: true,
+    safesearch: false,
     per_page: 33,
   });
     return fetch(`${BASE_URL}?${pixabayParams.toString()}`)
